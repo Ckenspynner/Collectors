@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "689206857423",
+    "project_id": "collectors-mbs",
+    "storage_bucket": "collectors-mbs.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689206857423:android:0b86d75174acd0ad4bf1ba",
+        "android_client_info": {
+          "package_name": "codespynner.io.collectors"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689206857423-p1puqoe3vlg201ue1oskgsqofaui3vpp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6odkKzuARXWeBvvbjZZ53uE8cgPPl-34"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689206857423-p1puqoe3vlg201ue1oskgsqofaui3vpp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "689206857423-00cltcluujjtmas2rp9hetfj8va44521.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "codespynner.io.collectors.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
