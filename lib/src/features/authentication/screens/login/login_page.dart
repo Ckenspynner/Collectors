@@ -252,74 +252,74 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                           onTap: () {
                             //Adds this changes
-                            if (_formKey.currentState!.validate()) {
-                              String Account = controller.controllerLicense.text.toUpperCase().trim().substring(0,2);
-                              AddRegisteredCollectorController.instance.loginUser(
-                                  '$Account${controller.controllerUsername.text.trim()}',
-                                  controller.controllerLicense.text.toUpperCase().trim());
-                            }
                             // if (_formKey.currentState!.validate()) {
-                            //   //print(controller.controllerLicense.text.toUpperCase().substring(0,2));
-                            //   switch (controller.controllerLicense.text.toUpperCase().substring(0,2)) {
-                            //     case 'RL':
-                            //       setState(() {
-                            //         _toggleVisible = false;
-                            //       });
-                            //
-                            //       //Adds this changes
-                            //       if (_formKey.currentState!.validate()) {
-                            //         AddRegisteredCollectorController.instance.loginUser(
-                            //             controller.controllerUsername.text.trim(),
-                            //             controller.controllerLicense.text.toUpperCase().trim());
-                            //       }
-                            //
-                            //       // Navigator.pop(context);
-                            //       // Get.to(() => const LicensedCollector());
-                            //       // print(
-                            //       //     '${controllerUsername.text} ${controllerPassword.text}');
-                            //       break;
-                            //     case 'C':
-                            //       setState(() {
-                            //         _toggleVisible = false;
-                            //       });
-                            //       Navigator.pop(context);
-                            //       Get.to(() => const GeneralCollector(backNav: false, collectorName: 'Hi, Maureen!',));
-                            //       // print(
-                            //       //     '${controllerUsername.text} ${controllerPassword.text}');
-                            //       break;
-                            //     case 'D':
-                            //       setState(() {
-                            //         _toggleVisible = false;
-                            //       });
-                            //       Navigator.pop(context);
-                            //       Get.to(() => const GeneralDriver(backNav: false,));
-                            //       // print(
-                            //       //     '${controllerUsername.text} ${controllerPassword.text}');
-                            //       break;
-                            //     case 'S':
-                            //       setState(() {
-                            //         _toggleVisible = false;
-                            //       });
-                            //       Navigator.pop(context);
-                            //       Get.to(() => const GeneralStation(backNav: false,));
-                            //       // print(
-                            //       //     '${controllerUsername.text} ${controllerPassword.text}');
-                            //       break;
-                            //     case 'M':
-                            //       setState(() {
-                            //         _toggleVisible = false;
-                            //       });
-                            //       Navigator.pop(context);
-                            //       Get.to(() => const MrfCollectionCenter());
-                            //       // print(
-                            //       //     '${controllerUsername.text} ${controllerPassword.text}');
-                            //       break;
-                            //     default:
-                            //       setState(() {
-                            //         _toggleVisible = true;
-                            //       });
-                            //   }
+                            //   String Account = controller.controllerLicense.text.toUpperCase().trim().substring(0,2);
+                            //   AddRegisteredCollectorController.instance.loginUser(
+                            //       '$Account${controller.controllerUsername.text.trim()}',
+                            //       controller.controllerLicense.text.toUpperCase().trim());
                             // }
+                            if (_formKey.currentState!.validate()) {
+                              //print(controller.controllerLicense.text.toUpperCase().substring(0,2));
+                              switch (controller.controllerLicense.text.toUpperCase().substring(0,2)) {
+                                case 'RL':
+                                  setState(() {
+                                    _toggleVisible = false;
+                                  });
+
+                                  //Adds this changes
+                                  // if (_formKey.currentState!.validate()) {
+                                  //   AddRegisteredCollectorController.instance.loginUser(
+                                  //       controller.controllerUsername.text.trim(),
+                                  //       controller.controllerLicense.text.toUpperCase().trim());
+                                  // }
+
+                                  Navigator.pop(context);
+                                  Get.to(() => const LicensedCollector());
+                                  // print(
+                                  //     '${controllerUsername.text} ${controllerPassword.text}');
+                                  break;
+                                case 'C':
+                                  setState(() {
+                                    _toggleVisible = false;
+                                  });
+                                  Navigator.pop(context);
+                                  Get.to(() => const GeneralCollector(backNav: false, collectorName: 'Hi, Maureen!',));
+                                  // print(
+                                  //     '${controllerUsername.text} ${controllerPassword.text}');
+                                  break;
+                                case 'D':
+                                  setState(() {
+                                    _toggleVisible = false;
+                                  });
+                                  Navigator.pop(context);
+                                  Get.to(() => const GeneralDriver(backNav: false,));
+                                  // print(
+                                  //     '${controllerUsername.text} ${controllerPassword.text}');
+                                  break;
+                                case 'S':
+                                  setState(() {
+                                    _toggleVisible = false;
+                                  });
+                                  Navigator.pop(context);
+                                  Get.to(() => const GeneralStation(backNav: false,));
+                                  // print(
+                                  //     '${controllerUsername.text} ${controllerPassword.text}');
+                                  break;
+                                case 'M':
+                                  setState(() {
+                                    _toggleVisible = false;
+                                  });
+                                  Navigator.pop(context);
+                                  Get.to(() => const MrfCollectionCenter());
+                                  // print(
+                                  //     '${controllerUsername.text} ${controllerPassword.text}');
+                                  break;
+                                default:
+                                  setState(() {
+                                    _toggleVisible = true;
+                                  });
+                              }
+                            }
                           },
                         ),
                       ],
